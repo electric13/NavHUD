@@ -25,15 +25,15 @@ android {
         versionName = "2.0"
     }
 
-    val keystorePath = localProps.getProperty("keystore.path")
-        ?: System.getenv("NAVHUD_KEYSTORE_PATH")
-    val keystoreFile = keystorePath?.takeIf { it.isNotBlank() }?.let(::file)?.takeIf { it.exists() }
-    val keystorePass = localProps.getProperty("keystore.password")
-        ?: System.getenv("NAVHUD_KEYSTORE_PASSWORD")
-    val keystoreAlias = localProps.getProperty("keystore.alias")
-        ?: System.getenv("NAVHUD_KEY_ALIAS")
-    val keystoreKeyPass = localProps.getProperty("keystore.keyPassword")
-        ?: System.getenv("NAVHUD_KEY_PASSWORD")
+    val keystorePath = (localProps.getProperty("keystore.path")
+        ?: System.getenv("NAVHUD_KEYSTORE_PATH"))?.trim()
+    val keystoreFile = keystorePath?.takeIf { it.isNotEmpty() }?.let(::file)?.takeIf { it.exists() }
+    val keystorePass = (localProps.getProperty("keystore.password")
+        ?: System.getenv("NAVHUD_KEYSTORE_PASSWORD"))?.trim()
+    val keystoreAlias = (localProps.getProperty("keystore.alias")
+        ?: System.getenv("NAVHUD_KEY_ALIAS"))?.trim()
+    val keystoreKeyPass = (localProps.getProperty("keystore.keyPassword")
+        ?: System.getenv("NAVHUD_KEY_PASSWORD"))?.trim()?.takeIf { it.isNotEmpty() }
         ?: keystorePass
 
     signingConfigs {
