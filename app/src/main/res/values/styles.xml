@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.NavHUD" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NavHUD</string>
+    <string name="a11y_service_desc">Читает данные маршрута и скорости из Яндекс.Навигатора для отображения на внешнем HUD-дисплее</string>
+</resources>

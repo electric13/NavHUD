@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/hud_bg" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="220.0dp" android:paddingStart="16.0dp" android:paddingEnd="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="36.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/hudArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/hudTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="420.0dp" android:maxLines="2" />
+        <TextView android:textSize="14.0sp" android:textColor="#bbffffff" android:ellipsize="end" android:id="@+id/hudSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxWidth="420.0dp" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

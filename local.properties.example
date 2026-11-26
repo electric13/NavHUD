@@ -1,0 +1,9 @@
+# Скопируйте этот файл в local.properties (он уже в .gitignore).
+sdk.dir=/path/to/Android/Sdk
+
+# Необязательно (для подписи системным platform-ключом под android.uid.system на устройстве):
+keystore.path=/path/to/platform-keystore.p12
+keystore.type=PKCS12
+keystore.password=CHANGE_ME
+keystore.alias=platform
+keystore.keyPassword=CHANGE_ME
